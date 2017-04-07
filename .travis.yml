@@ -1,0 +1,10 @@
+language: node_js
+node_js: 6
+deploy:
+  provider: npm
+  email: wmhilton@gmail.com
+  on:
+    skip_cleanup: true
+    tags: true
+    branch: master
+    repo: wmhilton/webtorrentify-link

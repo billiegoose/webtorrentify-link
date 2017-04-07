@@ -1,0 +1,26 @@
+{
+  "name": "webtorrentify-link",
+  "version": "0.0.0",
+  "description": "Generate a WebTorrent-compatible .torrent from a URL",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "William Hilton <wmhilton@gmail.com>",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com//webtorrentify-link"
+  },
+  "maintainers": [],
+  "contributors": [],
+  "devDependencies": {
+    "ava": "^0.19.0",
+    "parse-torrent": "^5.8.2"
+  },
+  "dependencies": {
+    "create-torrent": "^3.29.0",
+    "got": "^6.7.1"
+  }
+}
