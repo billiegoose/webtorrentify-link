@@ -16,12 +16,13 @@ module.exports = function (url, overrides) {
     // I want every option to be the same so I get identical output for identical input.
     // However your use case might be different, so I'll provide an option override mechanism.
     if (overrides) Object.assign(options, overrides)
-    createTorrent(got.stream(url), options, function(err, torrentBuffer) {
-      if (err) {
-        reject(err)
-      } else {
+    got(url, {encoding: null})
+    .then(function(response) {
+      createTorrent(response.body, options, function(err, torrentBuffer) {
+        if (err) return reject(err)
         resolve(torrentBuffer)
-      }
+      })
     })
+    .catch(reject)
   })
 }
