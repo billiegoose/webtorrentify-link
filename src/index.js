@@ -16,7 +16,7 @@ module.exports = function (url, overrides) {
     // I want every option to be the same so I get identical output for identical input.
     // However your use case might be different, so I'll provide an option override mechanism.
     if (overrides) Object.assign(options, overrides)
-    got(url, {encoding: null})
+    got(url, {encoding: null, headers: {origin: 'https://webtorrentify.now.sh'}})
     .then(function(response) {
       createTorrent(response.body, options, function(err, torrentBuffer) {
         if (err) return reject(err)
