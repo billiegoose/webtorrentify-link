@@ -11,7 +11,12 @@ module.exports = function (url, overrides) {
     var options = {
       name: path.basename(url),
       creationDate: 1,
-      urlList: [url]
+      urlList: [
+        // original URL
+        url,
+        // a CORS-enabled proxy alternative (also written by yours truly)
+        `https://cors-buster.now.sh/?href=${encodeURIComponent(url)}`
+      ]
     }
     // I want every option to be the same so I get identical output for identical input.
     // However your use case might be different, so I'll provide an option override mechanism.
