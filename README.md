@@ -29,6 +29,20 @@ npm install webtorrentify-link --save
       fs.writeFileSync('node-v6.10.2-linux-x64.tar.gz.torrent', buffer)
     })
 
+## Changelog
+
+1.0.5 - Add https://cors-buster-backup.now.sh/ proxy to urlList
+
+1.0.4 - Add https://cors-buster.now.sh/ proxy to urlList
+
+1.0.3 - Use Origin header in requests
+
+1.0.2 - Fix link to repo
+
+1.0.1 - Return error rather than crash for stream errors
+
+1.0.0 - Initial commit
+
 ## License
 
 Copyright 2017 William Hilton.

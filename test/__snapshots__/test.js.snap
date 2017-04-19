@@ -883,6 +883,7 @@ Object {
     "5839a36b988cdbd351cada273fd74ecd25ffc046",
   ],
   "urlList": Array [
+    "https://cors-buster-backup.now.sh/?href=https%3A%2F%2Fnodejs.org%2Fdist%2Fv6.10.2%2Fnode-v6.10.2-linux-x64.tar.gz",
     "https://cors-buster.now.sh/?href=https%3A%2F%2Fnodejs.org%2Fdist%2Fv6.10.2%2Fnode-v6.10.2-linux-x64.tar.gz",
     "https://nodejs.org/dist/v6.10.2/node-v6.10.2-linux-x64.tar.gz",
   ],
