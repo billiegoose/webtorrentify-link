@@ -15,7 +15,9 @@ module.exports = function (url, overrides) {
         // original URL
         url,
         // a CORS-enabled proxy alternative (also written by yours truly)
-        `https://cors-buster.now.sh/?href=${encodeURIComponent(url)}`
+        `https://cors-buster.now.sh/?href=${encodeURIComponent(url)}`,
+        // because reliability is hard
+        `https://cors-buster-backup.now.sh/?href=${encodeURIComponent(url)}`
       ]
     }
     // I want every option to be the same so I get identical output for identical input.
